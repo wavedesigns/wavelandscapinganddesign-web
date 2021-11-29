@@ -1,7 +1,10 @@
+import 'tailwindcss/tailwind.css'
+import 'styles/global.css'
+
+import Header from 'components/shared/Header'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import React from 'react'
-import 'tailwindcss/tailwind.css'
 
 const SiteHead = () => (
   <Head>
@@ -19,7 +22,10 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <SiteHead />
-      <Component {...pageProps} />
+      <Header />
+      <main>
+        <Component {...pageProps} />
+      </main>
     </>
   )
 }
