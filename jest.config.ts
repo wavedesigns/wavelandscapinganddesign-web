@@ -35,12 +35,12 @@ const jestConfig = {
     '/test-utils/', // those are utils not connected to prod code
   ],
 
-  coverageThreshold: {
-    global: {
-      lines: 4, // lines of coverage is our primary, we want to get this to 80%
-      branches: 3,
-    },
-  },
+  // coverageThreshold: {
+  //   global: {
+  //     lines: 4, // lines of coverage is our primary, we want to get this to 80%
+  //     branches: 3,
+  //   },
+  // },
 
   // extensions
   moduleFileExtensions: ['js', 'json', 'ts', 'tsx'],
