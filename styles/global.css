@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "EBGaramond";
+  src: url("../public/fonts/EBGaramond-Regular.ttf");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EBGaramond";
+  src: url("../public/fonts/EBGaramond-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EBGaramond Italic";
+  src: url("../public/fonts/EBGaramond-Italic.ttf");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../public/fonts/proxima-nova-bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "EBGaramond";
+  font-weight: 500;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation {
+  font-size: 1.6rem;
+}
+
+.link:hover {
+  font-weight: bold;
+}
+
+.link:visited {
+  font-family: "EBGaramond";
+  font-style: italic;
+}
+
+.blockquote-footer {
+  font-size: 1rem;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: -1.2% !important;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: -1.2% !important;
+}
+
+.react-multiple-carousel__arrow:before {
+  color: #000 !important;
+}
+
+.react-multiple-carousel__arrow:before {
+  color: #000 !important;
+}
+
+.react-multiple-carousel__arrow {
+  background: hsla(0, 0%, 100%, 0) !important;
+}
