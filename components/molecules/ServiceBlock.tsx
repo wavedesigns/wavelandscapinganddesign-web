@@ -14,7 +14,7 @@ interface Props {
   }
 }
 
-const ServiceBlock: React.FC<Props> = ({ label, description, img, slug }: Props) => {
+const ServiceBlock = ({ label, description, img, slug }: Props) => {
   return (
     <>
       <div className="bg-white relative p-8 flex flex-col justify-center items-center text-center rounded border-gray-300 mx-4 card">

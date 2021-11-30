@@ -13,7 +13,7 @@ const SEO = {
 interface Props {
   gallery: Gallery
 }
-const Home: React.FC<Props> = ({ gallery }: Props) => {
+const Home = ({ gallery }: Props) => {
   return (
     <>
       <SiteHead {...SEO} />

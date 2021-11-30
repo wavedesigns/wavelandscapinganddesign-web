@@ -1,5 +1,5 @@
 const jestConfig = {
-  name: 'ScarinciHollenbeck',
+  name: 'WaveLandScapingAndDesign',
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
 

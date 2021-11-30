@@ -37,7 +37,7 @@ const SOCIAL_MEDIA = [
 interface Props {
   position: string
 }
-const SocialMedia: React.FC<Props> = ({ position }: Props) => (
+const SocialMedia = ({ position }: Props) => (
   <div className={`flex space-between ${position}`}>
     {SOCIAL_MEDIA.map(({ id, url, image }) => (
       <a key={id} href={url} rel="noreferrer noopener" className="mx-2">
