@@ -1,5 +1,6 @@
 import ButtonWithLabel from 'components/molecules/ButtonWithLabel'
 import SocialMedia from 'components/molecules/SocialMedia'
+import React from 'react'
 
 const ConnectBanner = () => (
   <div className="my-16 sm:my-40">
