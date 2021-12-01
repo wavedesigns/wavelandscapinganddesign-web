@@ -1,4 +1,5 @@
 import 'tailwindcss/tailwind.css'
+import 'react-image-lightbox/style.css'
 import 'styles/global.css'
 
 import Header from 'components/shared/Header'
@@ -12,7 +13,7 @@ const SiteHead = () => (
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    {/* <link rel="manifest" href="/images/favicon/site.webmanifest" /> */}
     <meta name="msapplication-TileColor" content="#2e3a52" />
     <meta name="theme-color" content="#2e3a52" />
   </Head>

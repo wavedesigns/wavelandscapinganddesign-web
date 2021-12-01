@@ -1,13 +1,20 @@
+import { motion } from 'framer-motion'
 import React from 'react'
+
 const Banner = () => (
   <>
     <div className="w-full bg-cover bg-center bg-home-banner">
-      <div className="flex flex-col justify-center items-center p-16 lg:p-40 text-center h-full">
+      <motion.div
+        initial={{ opacity: 0, y: 300 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5 }}
+        className="flex flex-col justify-center items-center p-16 lg:p-40 text-center h-full"
+      >
         <h1 className="text-6xl sm:text-8xl font-serif text-white">
           Imagine your ideal outdoor space and{' '}
           <span className="sub-title block text-7xl sm:text-9xl font-bold">start living it</span>
         </h1>
-      </div>
+      </motion.div>
     </div>
     <style jsx>{`
       h1 {

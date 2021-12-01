@@ -11,17 +11,22 @@
     "lint": " eslint . --fix",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "test": "jest .",
+    "test": "jest . -u",
     "test:ci": "jest --ci --coverage --silent",
     "test:coverage": "jest --coverage ."
   },
   "author": "peter t",
   "license": "ISC",
   "dependencies": {
+    "cloudinary": "^1.27.1",
     "framer-motion": "^5.3.3",
+    "graphql": "^16.0.1",
+    "graphql-request": "^3.6.1",
     "next": "^12.0.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-image-lightbox": "^5.1.4",
+    "react-intersection-observer": "^8.32.5",
     "react-multi-carousel": "^2.6.5",
     "sharp": "^0.29.3"
   },

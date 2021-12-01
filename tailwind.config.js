@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   mode: 'jit',
@@ -12,6 +13,14 @@ module.exports = {
     backgroundImage: {
       'home-banner': "url('/images/banner/home-page-banner.webp')",
       'back-banner': "url('/images/banner/back-page-banner.webp')",
+    },
+    colors: {
+      ...colors,
+      darkBlue: {
+        light: '#59709E',
+        DEFAULT: '#2e3a52',
+        dark: '#1F2838',
+      },
     },
   },
   variants: {
