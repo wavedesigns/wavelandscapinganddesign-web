@@ -1,33 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-
-const SITE_NAV = [
-  {
-    id: 1,
-    label: 'Services',
-    slug: '/services',
-  },
-  {
-    id: 2,
-    label: 'Gallery',
-    slug: '/gallery',
-  },
-  {
-    id: 3,
-    label: 'Reviews',
-    slug: '/reviews',
-  },
-  {
-    id: 4,
-    label: 'Careers',
-    slug: '/careers',
-  },
-  {
-    id: 5,
-    label: 'Contact',
-    slug: '/contact',
-  },
-]
+import { SITE_NAV } from 'utils/constants'
 
 const Navigation = () => (
   <nav className="flex justify-between">

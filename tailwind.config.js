@@ -21,6 +21,9 @@ module.exports = {
         DEFAULT: '#2e3a52',
         dark: '#1F2838',
       },
+      skyBlue: {
+        DEFAULT: '#7594d1',
+      },
     },
   },
   variants: {

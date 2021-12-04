@@ -24,12 +24,8 @@ Wave Landscaping & Design is the premiere landscaping design and maintenance ser
 
 ## TO DOS
 
-- Build out Twilio Email APIs and Form functionality
+- Build out footer component form w/ Formspree (toggle blue background based on whether its a page or in the footer)
 - Mobile Review
 - Mobile Menu
-- Services Page
-- Gallery Page
 - Careers
-- Hook in GraphCMS
 - Write tests
-- Build out footer

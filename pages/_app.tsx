@@ -2,6 +2,7 @@ import 'tailwindcss/tailwind.css'
 import 'react-image-lightbox/style.css'
 import 'styles/global.css'
 
+import Footer from 'components/shared/Footer'
 import Header from 'components/shared/Header'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
@@ -27,6 +28,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       <main>
         <Component {...pageProps} />
       </main>
+      <Footer />
     </>
   )
 }
