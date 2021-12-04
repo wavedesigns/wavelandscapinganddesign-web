@@ -8,7 +8,7 @@ interface Props {
 
 const LinkRow = ({ title, links }: Props) => {
   return (
-    <div className="flex flex-col sm:w-52">
+    <div className="flex flex-col mb-6 sm:mb-0 sm:w-52">
       <p className="text-darkBlue font-serif font-bold text-2xl">{title}</p>
       {links.map(({ slug, label }) => (
         <Link href={slug} key={label}>
