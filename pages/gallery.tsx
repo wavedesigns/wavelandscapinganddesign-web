@@ -1,3 +1,4 @@
+import ContactContainer from 'components/shared/ContactContainer'
 import GalleryGrid from 'components/shared/GalleryGrid'
 import PageBanner from 'components/shared/PageBanner'
 import SiteHead from 'components/shared/SiteHead'
@@ -21,13 +22,16 @@ interface Props {
 
 const Gallery = ({ gallery }: Props) => {
   return (
-    <FadeInContainer>
-      <SiteHead {...SEO} />
-      <PageBanner title="Gallery" />
-      <div className="mx-auto max-w-screen-xl">
-        <GalleryGrid gallery={gallery} />
-      </div>
-    </FadeInContainer>
+    <>
+      <FadeInContainer>
+        <SiteHead {...SEO} />
+        <PageBanner title="Gallery" />
+        <div className="mx-auto max-w-screen-xl">
+          <GalleryGrid gallery={gallery} />
+        </div>
+      </FadeInContainer>
+      <ContactContainer isBlue={true} />
+    </>
   )
 }
 

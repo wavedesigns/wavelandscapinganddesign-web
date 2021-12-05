@@ -1,4 +1,5 @@
 import ReviewBlock from 'components/molecules/ReviewBlock'
+import ContactContainer from 'components/shared/ContactContainer'
 import PageBanner from 'components/shared/PageBanner'
 import SiteHead from 'components/shared/SiteHead'
 import { gql, GraphQLClient } from 'graphql-request'
@@ -21,15 +22,18 @@ interface Props {
 }
 const Reviews = ({ reviews }: Props) => {
   return (
-    <FadeInContainer>
-      <SiteHead {...SEO} />
-      <PageBanner title="Reviews" />
-      <PageContainer>
-        {reviews.map((review) => (
-          <ReviewBlock {...review} key={review.name} />
-        ))}
-      </PageContainer>
-    </FadeInContainer>
+    <>
+      <FadeInContainer>
+        <SiteHead {...SEO} />
+        <PageBanner title="Reviews" />
+        <PageContainer>
+          {reviews.map((review) => (
+            <ReviewBlock {...review} key={review.name} />
+          ))}
+        </PageContainer>
+      </FadeInContainer>
+      <ContactContainer isBlue={true} />
+    </>
   )
 }
 

@@ -1,5 +1,6 @@
 import SectionTitle from 'components/atoms/SectionTitle'
 import CareersForm from 'components/molecules/CareersForm'
+import ContactContainer from 'components/shared/ContactContainer'
 import PageBanner from 'components/shared/PageBanner'
 import SiteHead from 'components/shared/SiteHead'
 import FadeInContainer from 'layouts/FadeInContainer'
@@ -17,14 +18,17 @@ const SUB_TITLE =
 
 const Careers = () => {
   return (
-    <FadeInContainer>
+    <>
       <SiteHead {...SEO} />
-      <PageBanner title="Careers" />
-      <PageContainer>
-        <SectionTitle title={SUB_TITLE} />
-        <CareersForm />
-      </PageContainer>
-    </FadeInContainer>
+      <FadeInContainer>
+        <PageBanner title="Careers" />
+        <PageContainer>
+          <SectionTitle title={SUB_TITLE} />
+          <CareersForm />
+        </PageContainer>
+      </FadeInContainer>
+      <ContactContainer isBlue={true} />
+    </>
   )
 }
 

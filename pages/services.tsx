@@ -1,5 +1,6 @@
 import ServiceCard from 'components/molecules/ServiceCard'
 import ServiceLinks from 'components/organisms/services/ServiceLinks'
+import ContactContainer from 'components/shared/ContactContainer'
 import PageBanner from 'components/shared/PageBanner'
 import SiteHead from 'components/shared/SiteHead'
 import { gql, GraphQLClient } from 'graphql-request'
@@ -32,16 +33,19 @@ const Services = ({ services }) => {
   }))
 
   return (
-    <FadeInContainer>
-      <SiteHead {...SEO} />
-      <PageBanner title="Services" />
-      <ServiceLinks links={serviceLinks} />
-      <PageContainer>
-        {services.map((service, index) => (
-          <ServiceCard index={index} service={service} key={service.title} />
-        ))}
-      </PageContainer>
-    </FadeInContainer>
+    <>
+      <FadeInContainer>
+        <SiteHead {...SEO} />
+        <PageBanner title="Services" />
+        <ServiceLinks links={serviceLinks} />
+        <PageContainer>
+          {services.map((service, index) => (
+            <ServiceCard index={index} service={service} key={service.title} />
+          ))}
+        </PageContainer>
+      </FadeInContainer>
+      <ContactContainer isBlue={true} />
+    </>
   )
 }
 

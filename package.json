@@ -18,6 +18,8 @@
   "author": "peter t",
   "license": "ISC",
   "dependencies": {
+    "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.5",
     "cloudinary": "^1.27.1",
     "framer-motion": "^5.3.3",
     "graphql": "^16.0.1",

@@ -8,7 +8,7 @@ const Menu = () => (
       <SocialMedia position="justify-end" radix={32} />
       <Navigation />
     </div>
-    <div className="block lg:hidden">Mobile Menu</div>
+    <div className="block lg:hidden">Menu...</div>
   </>
 )
 
