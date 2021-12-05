@@ -26,9 +26,7 @@ const Gallery = ({ gallery }: Props) => {
       <FadeInContainer>
         <SiteHead {...SEO} />
         <PageBanner title="Gallery" />
-        <div className="mx-auto max-w-screen-xl">
-          <GalleryGrid gallery={gallery} />
-        </div>
+        <GalleryGrid gallery={gallery} />
       </FadeInContainer>
       <ContactContainer isBlue={true} />
     </>
@@ -46,7 +44,8 @@ export const getStaticProps: GetStaticProps = async () => {
     })
     .then((res) => res.resources)
 
-  const gallery = formatGallery(request)
+  const radix = { width: 467, height: 350 }
+  const gallery = formatGallery(request, radix)
 
   return {
     props: {

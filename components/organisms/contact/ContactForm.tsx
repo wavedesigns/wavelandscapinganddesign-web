@@ -1,5 +1,6 @@
 import Button from 'components/atoms/Button'
 import InputText from 'components/atoms/InputText'
+import React from 'react'
 
 interface Props {
   isBlue: boolean

@@ -1,32 +1,30 @@
 import LightBoxView from 'components/atoms/LightBoxView'
+import Image from 'next/image'
 import React, { useState } from 'react'
+import { Gallery } from 'types/Gallery'
 
 interface Props {
-  src: string
-  alt: string
+  image: Gallery
 }
 
-const GalleryImage = ({ src, alt }: Props) => {
+const GalleryImage = ({ image }: Props) => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
+  const { src, alt, width, height, previewUrl } = image
+  const imageProps = { src, alt, width, height }
+
   return (
     <>
       <div
         tabIndex={0}
         role="button"
         aria-label={alt}
-        style={{
-          backgroundImage: `url(${src})`,
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center center',
-          backgroundSize: 'cover',
-          height: '350px',
-          width: '100%',
-          borderRadius: '5px',
-        }}
         onClick={() => setIsOpen(true)}
         onKeyPress={() => setIsOpen(true)}
-      />
-      {isOpen && <LightBoxView src={src} setIsOpen={setIsOpen} />}
+        className="mx-auto lg:mb-8"
+      >
+        <Image {...imageProps} />
+      </div>
+      {isOpen && <LightBoxView src={previewUrl} setIsOpen={setIsOpen} />}
     </>
   )
 }

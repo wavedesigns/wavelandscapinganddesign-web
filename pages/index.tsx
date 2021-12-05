@@ -55,7 +55,8 @@ export const getStaticProps: GetStaticProps = async () => {
     })
     .then((res) => res.resources)
 
-  const gallery = formatGallery(request)
+  const radix = { width: 467, height: 350 }
+  const gallery = formatGallery(request, radix)
 
   return {
     props: {

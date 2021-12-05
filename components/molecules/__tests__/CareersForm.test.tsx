@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import CareersForm from 'components/molecules/CareersForm'
 import React from 'react'
 
-const formLabels = ['full-name', 'phone', 'email', 'resume']
+const formLabels = ['career-full-name', 'career-phone', 'career-email', 'career-resume']
 describe('<CareersForm />', () => {
   it('renders button label', () => {
     render(<CareersForm />)
