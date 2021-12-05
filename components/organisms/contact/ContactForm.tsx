@@ -6,8 +6,6 @@ interface Props {
   isBlue: boolean
 }
 const ContactForm = ({ isBlue }: Props) => {
-  console.log(isBlue)
-
   return (
     <>
       {isBlue}

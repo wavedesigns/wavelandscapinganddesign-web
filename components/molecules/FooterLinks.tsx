@@ -15,8 +15,9 @@ const FOOTER_NAVS = [
     slug: '/privacy-policy',
   },
 ]
+
 const FooterLinks = () => (
-  <div className="flex flex-col md:flex-row">
+  <div className="flex flex-col md:flex-row mb-4 lg:mb-0">
     <LinkRow title="Navigation" links={FOOTER_NAVS} />
     <LinkRow title="Social Media" links={SOCIAL_MEDIA_LINKS} />
   </div>

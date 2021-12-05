@@ -7,7 +7,7 @@ const FooterMap = () => (
     alt="Wave Landscaping Design Location"
     width={530}
     height={306}
-    layout="intrinsic"
+    layout="fixed"
   />
 )
 

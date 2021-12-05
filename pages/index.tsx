@@ -1,4 +1,4 @@
-import ButtonWithLabel from 'components/molecules/ButtonWithLabel'
+import ButtonWithLabel from 'components/atoms/ButtonWithLabel'
 import Banner from 'components/organisms/home/Banner'
 import ConnectBanner from 'components/organisms/home/ConnectBanner'
 import Services from 'components/organisms/home/Services'

@@ -17,7 +17,7 @@ interface Props {
 const ServiceBlock = ({ label, description, img, slug }: Props) => {
   return (
     <>
-      <div className="bg-white relative p-8 flex flex-col justify-center items-center text-center rounded border-gray-300 mx-4 card">
+      <div className="bg-white relative p-8 flex flex-col justify-center items-center text-center rounded border-gray-300 mx-4">
         <Link href={slug}>
           <a>
             <Image {...img} layout="fixed" className="p-4" />
@@ -26,17 +26,6 @@ const ServiceBlock = ({ label, description, img, slug }: Props) => {
           </a>
         </Link>
       </div>
-      <style>{`
-      .card {
-        width: 100%:
-      }
-
-      @media (min-width: 640px) {
-        .card {
-          width: 33%;
-        }
-      }
-    `}</style>
     </>
   )
 }

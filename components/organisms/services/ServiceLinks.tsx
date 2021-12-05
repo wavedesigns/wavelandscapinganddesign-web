@@ -10,7 +10,7 @@ const ServiceLinks = ({ links }: Props) => (
     <div className="max-w-6xl mx-auto pt-4 pb-6 text-center">
       {links.map(({ label, slug }) => (
         <Link href={slug} key={label}>
-          <a className="text-3xl mx-4 font-serif hover:underline">{label}</a>
+          <a className="text-xl sm:text-3xl mx-4 font-serif hover:underline">{label}</a>
         </Link>
       ))}
     </div>

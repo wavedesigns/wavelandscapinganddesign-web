@@ -6,7 +6,7 @@ interface Props {
 
 const SectionTitle = ({ title }: Props) => {
   return (
-    <div className="w-full">
+    <div className="w-full px-4">
       <p className="text-4xl text-center font-extrabold font-serif">{title}</p>
     </div>
   )

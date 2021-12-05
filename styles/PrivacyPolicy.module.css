@@ -1,0 +1,24 @@
+.page {
+  @apply font-serif;
+}
+
+.page > h1,
+.page > h2 {
+  @apply text-3xl font-bold;
+}
+
+.page > h1 {
+  @apply mb-3;
+}
+
+.page > h2 {
+  @apply mb-4;
+}
+
+.page > p {
+  @apply text-xl mb-4;
+}
+
+.page > p > a {
+  @apply underline;
+}

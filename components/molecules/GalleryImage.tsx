@@ -4,15 +4,14 @@ import React, { useState } from 'react'
 interface Props {
   src: string
   alt: string
-  tabIndex?: number
 }
 
-const GalleryImage = ({ src, alt, tabIndex }: Props) => {
+const GalleryImage = ({ src, alt }: Props) => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   return (
     <>
       <div
-        tabIndex={tabIndex}
+        tabIndex={0}
         role="button"
         aria-label={alt}
         style={{

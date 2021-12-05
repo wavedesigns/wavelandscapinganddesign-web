@@ -9,11 +9,11 @@ interface Props {
 const ServiceCard = ({ service, index }: Props) => (
   <div
     id={service.id}
-    className={`flex flex-col sm:flex-row sm:justify-between my-12 sm:my-24 ${
-      index % 2 === 0 ? 'sm:flex-row-reverse' : ''
+    className={`flex flex-col lg:flex-row lg:justify-between my-12 mx-2 lg:mx-0 sm:my-24 ${
+      index % 2 === 0 ? 'lg:flex-row-reverse' : ''
     }`}
   >
-    <div>
+    <div className="mx-auto lg:mx-0 mb-4 lg:mb-0">
       <Image
         src={service.displayImage.url}
         alt={service.title}

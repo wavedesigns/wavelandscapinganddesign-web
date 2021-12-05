@@ -1,4 +1,4 @@
-import ReviewBlock from 'components/molecules/ReviewBlock'
+import ReviewBlock from 'components/atoms/ReviewBlock'
 import ContactContainer from 'components/shared/ContactContainer'
 import PageBanner from 'components/shared/PageBanner'
 import SiteHead from 'components/shared/SiteHead'

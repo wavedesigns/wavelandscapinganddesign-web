@@ -13,11 +13,11 @@ const GalleryGrid = ({ gallery }: Props) => {
   const isHome = router.asPath === '/'
 
   return (
-    <div className="p-16">
+    <div className="p-4 sm:p-16">
       {isHome && <SectionTitle title="Gallery" />}
-      <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mx-auto mt-12">
+      <div className="container grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 mx-auto mt-12">
         {gallery.map((photo, index) => (
-          <GalleryImage {...photo} tabIndex={index} key={photo.id} />
+          <GalleryImage {...photo} key={photo.id} />
         ))}
       </div>
     </div>

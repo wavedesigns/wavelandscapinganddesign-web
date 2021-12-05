@@ -1,4 +1,4 @@
-import ButtonWithLabel from 'components/molecules/ButtonWithLabel'
+import ButtonWithLabel from 'components/atoms/ButtonWithLabel'
 import SocialMedia from 'components/molecules/SocialMedia'
 import React from 'react'
 

@@ -8,7 +8,7 @@ interface Props {
 const ContactContainer = ({ isBlue }: Props) => (
   <div className={isBlue ? 'bg-darkBlue text-white py-12' : 'bg-white text-black'}>
     <div className="my-12 sm:my-0 mx-auto max-w-screen-xl">
-      <div className="flex flex-col sm:flex-row">
+      <div className="flex flex-col sm:flex-row mx-4 lg:mx-0">
         <OwnerBio />
         <ContactForm isBlue={isBlue} />
       </div>

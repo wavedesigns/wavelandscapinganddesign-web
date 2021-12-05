@@ -23,8 +23,10 @@ const Careers = () => {
       <FadeInContainer>
         <PageBanner title="Careers" />
         <PageContainer>
-          <SectionTitle title={SUB_TITLE} />
-          <CareersForm />
+          <div className="mx-4 sm:mx-0">
+            <SectionTitle title={SUB_TITLE} />
+            <CareersForm />
+          </div>
         </PageContainer>
       </FadeInContainer>
       <ContactContainer isBlue={true} />

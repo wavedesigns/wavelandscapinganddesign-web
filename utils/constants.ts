@@ -46,3 +46,42 @@ export const SOCIAL_MEDIA_LINKS = [
     ext: 'TikTok-245x268.webp',
   },
 ]
+
+export const SERVICES = [
+  {
+    id: 1,
+    label: 'Lawn Maintenance',
+    description: 'Achieve a greener lawn with lawn care services from our team.',
+    slug: '/services/#lawn-maintenance',
+    img: {
+      src: '/images/service-icons/lawn-maintenance.webp',
+      width: 200,
+      height: 192,
+      alt: 'lawn maintenance',
+    },
+  },
+  {
+    id: 2,
+    label: 'Landscape Design',
+    description: 'Endless ideas for customizing your personal resort or your backyard.',
+    slug: '/services/#landscape-design',
+    img: {
+      src: '/images/service-icons/landscape-design.webp',
+      width: 220,
+      height: 206,
+      alt: 'landscape design',
+    },
+  },
+  {
+    id: 3,
+    label: 'Irrigation Services',
+    description: 'Offering sprinkler checks and system repairs.',
+    slug: '/services/#lawn-maintenance',
+    img: {
+      src: '/images/service-icons/irrigation.webp',
+      width: 220,
+      height: 191,
+      alt: 'irrigation',
+    },
+  },
+]

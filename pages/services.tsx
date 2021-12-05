@@ -39,7 +39,7 @@ const Services = ({ services }) => {
         <PageBanner title="Services" />
         <ServiceLinks links={serviceLinks} />
         <PageContainer>
-          {services.map((service, index) => (
+          {pageServices.map((service, index) => (
             <ServiceCard index={index} service={service} key={service.title} />
           ))}
         </PageContainer>
