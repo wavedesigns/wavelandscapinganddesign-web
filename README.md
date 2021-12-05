@@ -22,4 +22,5 @@ Wave Landscaping & Design is the premiere landscaping design and maintenance ser
 
 ## TO DOS
 
-- Get url and deploy
+- Finish writing tests for molecules, organisms, shared, and pages
+- Build out serverless email handler with nodemailer

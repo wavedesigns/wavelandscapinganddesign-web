@@ -12,12 +12,12 @@
     "format": "prettier --write .",
     "prepare": "husky install",
     "test": "jest . -u",
-    "test:ci": "jest --ci --coverage --silent",
-    "test:coverage": "jest --coverage ."
+    "test:coverage": "jest --coverage"
   },
   "author": "peter t",
   "license": "ISC",
   "dependencies": {
+    "@babel/preset-react": "^7.16.0",
     "@heroicons/react": "^1.0.5",
     "cloudinary": "^1.27.1",
     "framer-motion": "^5.3.3",
@@ -39,12 +39,9 @@
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.7",
     "@types/react": "^17.0.35",
-    "@types/react-instantsearch-dom": "^6.12.0",
-    "@types/styled-components": "^5.1.15",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "autoprefixer": "^10.4.0",
-    "babel-plugin-styled-components": "^1.13.3",
     "eslint": "^7.5.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^8.3.0",

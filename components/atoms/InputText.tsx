@@ -16,12 +16,14 @@ const InputText = ({ id, label, type }: Props) => {
             type={type}
             name={id}
             id={id}
+            aria-label={id}
             className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border p-3 border-gray-300 rounded text-lg"
           />
         ) : (
           <textarea
             name={id}
             id={id}
+            aria-label={id}
             style={{ minHeight: '200px' }}
             className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border p-3 border-gray-300 rounded text-lg"
           />

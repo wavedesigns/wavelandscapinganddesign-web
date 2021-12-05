@@ -1,0 +1,9 @@
+.heading {
+  text-shadow: 2px 3px 8px #000;
+}
+
+.titleWrapper {
+  border: 3px solid #fff;
+  display: block;
+  padding: 2em 4.8em 3em 4.8em;
+}

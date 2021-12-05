@@ -6,6 +6,7 @@ interface Props {
 }
 const Button = ({ label, handlePress }: Props) => (
   <button
+    type="submit"
     onClick={handlePress || undefined}
     className="bg-skyBlue text-white text-center py-4 px-12 text-xl"
   >

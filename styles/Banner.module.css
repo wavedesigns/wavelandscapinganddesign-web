@@ -1,0 +1,16 @@
+.heading {
+  text-shadow: 2px 3px 8px #000;
+}
+.subTitle {
+  color: #f7ea72;
+}
+
+.bannerHeight {
+  min-height: 55vh;
+}
+
+@media (min-width: 640px) {
+  .bannerHeight {
+    min-height: 70vh;
+  }
+}
