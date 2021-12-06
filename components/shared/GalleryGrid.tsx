@@ -13,7 +13,6 @@ interface Props {
 const GalleryGrid = ({ gallery }: Props) => {
   const router = useRouter()
   const isHome = router.asPath === '/'
-  // 467 x 350
   const { observe, inView } = useInView({
     onEnter: ({ unobserve }) => unobserve(), // only run once
   })
