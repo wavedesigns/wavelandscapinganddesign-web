@@ -18,9 +18,9 @@ module.exports = {
     colors: {
       ...colors,
       darkBlue: {
-        light: '#59709E',
+        200: '#59709E',
         DEFAULT: '#2e3a52',
-        dark: '#1F2838',
+        900: '#131B25',
       },
       skyBlue: {
         DEFAULT: '#7594d1',

@@ -8,7 +8,7 @@ const Button = ({ label, handlePress }: Props) => (
   <button
     type="submit"
     onClick={handlePress || undefined}
-    className="bg-skyBlue text-darkBlue text-center py-4 px-12 text-xl"
+    className="bg-skyBlue text-darkBlue-900 text-center py-4 px-12 text-xl"
   >
     {label}
   </button>
