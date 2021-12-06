@@ -1,5 +1,5 @@
 import ServiceCard from 'components/molecules/ServiceCard'
-import ServiceLinks from 'components/organisms/services/ServiceLinks'
+import ServiceLinks from 'components/molecules/ServiceLinks'
 import ContactContainer from 'components/shared/ContactContainer'
 import PageBanner from 'components/shared/PageBanner'
 import SiteHead from 'components/shared/SiteHead'

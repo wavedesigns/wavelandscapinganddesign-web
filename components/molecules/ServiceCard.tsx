@@ -6,6 +6,7 @@ interface Props {
   service: Service
   index: number
 }
+
 const ServiceCard = ({ service, index }: Props) => (
   <div
     id={service.id}
