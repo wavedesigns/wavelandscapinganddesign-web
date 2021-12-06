@@ -38,11 +38,11 @@ const MobileMenu = () => {
   return (
     <div ref={node} className="relative right-0">
       {dropDown ? (
-        <button onClick={() => setDropDown(!dropDown)} aria-label="mobil menu">
+        <button onClick={() => setDropDown(!dropDown)} aria-label="mobile menu">
           <XIcon className="h-10 w-10" />
         </button>
       ) : (
-        <button onClick={() => setDropDown(!dropDown)} aria-label="mobil menu">
+        <button onClick={() => setDropDown(!dropDown)} aria-label="mobile menu">
           <MenuIcon className="h-10 w-10" />
         </button>
       )}

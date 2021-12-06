@@ -13,7 +13,7 @@ const mockProps = {
   ],
 }
 
-describe('<LinkRow {...mockProps} />', () => {
+describe('<LinkRow />', () => {
   it('renders component title', () => {
     render(<LinkRow {...mockProps} />)
 

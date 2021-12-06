@@ -85,3 +85,8 @@ export const SERVICES = [
     },
   },
 ]
+
+export const FAILED_EMAIL_MESSAGE =
+  'There was an issue with your submission, please email the details to wavelandscapingdesign@gmail.com'
+export const successEmailMessage = (page: string) =>
+  `Thank you for your ${page} submission. We will reach out you shortly!`

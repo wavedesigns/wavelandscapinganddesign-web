@@ -6,21 +6,22 @@ const mockProps = {
   id: 'test-input',
   label: 'Hello World',
   type: 'phone',
+  name: 'HelloWorld',
 }
 
 describe('<InputText />', () => {
   it('renders the proper name attribute', () => {
     render(<InputText {...mockProps} />)
     const input: HTMLInputElement = screen.getByLabelText('test-input')
-    expect(input.name).toBe(mockProps.id)
+    expect(input.name).toBe(mockProps.name)
   })
 
   it('renders different name attribute after prop change', () => {
-    render(<InputText {...mockProps} id="test-second-input" />)
-    const input: HTMLInputElement = screen.getByLabelText('test-second-input')
+    render(<InputText {...mockProps} name="HowdyDoody" />)
+    const input: HTMLInputElement = screen.getByLabelText('test-input')
 
-    expect(input.name).toBe('test-second-input')
-    expect(input.name).not.toBe('test-input')
+    expect(input.name).toBe('HowdyDoody')
+    expect(input.name).not.toBe('HelloWorld')
   })
 
   it('renders the input element when the type prop is "phone"', () => {
