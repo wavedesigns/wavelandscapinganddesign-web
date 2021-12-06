@@ -23,7 +23,10 @@ const SiteHead = ({ title, metaDescription }: Props) => {
       <meta property="og:title" content={title} />
       <meta property="og:locale" content="en_US" />
       <meta property="og:url" content={currentUrl} />
-      <meta property="og:image" content="/images/favicons/android-chrome-144x144.png" />
+      <meta
+        property="og:image"
+        content={`${SITE_URL}/images/favicons/android-chrome-144x144.png`}
+      />
       <meta property="og:description" content={metaDescription} />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={title} />
@@ -31,7 +34,10 @@ const SiteHead = ({ title, metaDescription }: Props) => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
-      <meta name="twitter:image" content="/images/favicons/android-chrome-144x144.png"></meta>
+      <meta
+        name="twitter:image"
+        content={`${SITE_URL}/images/favicons/android-chrome-144x144.png`}
+      ></meta>
     </Head>
   )
 }

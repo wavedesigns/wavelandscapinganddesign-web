@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /*
+Sitemap: https://www.wavelandscapinganddesign.com/sitemap.xml
