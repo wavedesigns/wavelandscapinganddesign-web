@@ -54,8 +54,8 @@ export const SERVICES = [
     description: 'Achieve a greener lawn with lawn care services from our team.',
     slug: '/services/#lawn-maintenance',
     img: {
-      src: '/images/service-icons/lawn-maintenance.webp',
-      width: 200,
+      src: 'https://res.cloudinary.com/tumulty-web-services/image/upload/v1639097554/wavelandscapinganddesign/various/lawn-maintenance.webp',
+      width: 220,
       height: 192,
       alt: 'lawn maintenance',
     },
@@ -66,7 +66,7 @@ export const SERVICES = [
     description: 'Endless ideas for customizing your personal resort or your backyard.',
     slug: '/services/#landscape-design',
     img: {
-      src: '/images/service-icons/landscape-design.webp',
+      src: 'https://res.cloudinary.com/tumulty-web-services/image/upload/v1639097551/wavelandscapinganddesign/various/landscape-design.webp',
       width: 220,
       height: 206,
       alt: 'landscape design',
@@ -78,7 +78,7 @@ export const SERVICES = [
     description: 'Offering sprinkler checks and system repairs.',
     slug: '/services/#lawn-maintenance',
     img: {
-      src: '/images/service-icons/irrigation.webp',
+      src: 'https://res.cloudinary.com/tumulty-web-services/image/upload/v1639097547/wavelandscapinganddesign/various/irrigation.webp',
       width: 220,
       height: 191,
       alt: 'irrigation',

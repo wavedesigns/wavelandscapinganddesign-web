@@ -1,7 +1,9 @@
 import SectionTitle from 'components/atoms/SectionTitle'
-import ServiceBlock from 'components/molecules/ServiceBlock'
+import dynamic from 'next/dynamic'
 import React from 'react'
 import { SERVICES } from 'utils/constants'
+
+const ServiceBlock = dynamic(() => import('components/molecules/ServiceBlock'))
 
 const Services = () => (
   <div className="p-4 sm:p-16">
