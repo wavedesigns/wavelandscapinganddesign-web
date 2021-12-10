@@ -2,12 +2,13 @@ import 'tailwindcss/tailwind.css'
 import 'react-image-lightbox/style.css'
 import 'styles/global.css'
 
-import Footer from 'components/shared/Footer'
 import Header from 'components/shared/Header'
 import { AppProps } from 'next/app'
+import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import React from 'react'
 
+const Footer = dynamic(() => import('components/shared/Footer'))
 const SiteHead = () => (
   <Head>
     <meta charSet="utf-8" />

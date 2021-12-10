@@ -1,8 +1,9 @@
-import LightBoxView from 'components/atoms/LightBoxView'
+import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { Gallery } from 'types/Gallery'
 
+const LightBoxView = dynamic(() => import('components/atoms/LightBoxView'))
 interface Props {
   image: Gallery
 }

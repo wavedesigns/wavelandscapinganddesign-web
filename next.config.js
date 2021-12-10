@@ -1,4 +1,8 @@
-module.exports = {
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+
+module.exports = withBundleAnalyzer({
   images: {
     domains: ['res.cloudinary.com', 'media.graphcms.com'],
     minimumCacheTTL: 60 * 60 * 5,
@@ -8,4 +12,4 @@ module.exports = {
     NEXT_PUBLIC_FORM_SPREE_CONTACT_KEY: process.env.NEXT_PUBLIC_FORM_SPREE_CONTACT_KEY,
     NEXT_PUBLIC_FORM_SPREE_CAREERS_KEY: process.env.NEXT_PUBLIC_FORM_SPREE_CAREERS_KEY,
   },
-}
+})
