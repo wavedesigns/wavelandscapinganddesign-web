@@ -1,14 +1,16 @@
 import ButtonWithLabel from 'components/atoms/ButtonWithLabel'
 import Banner from 'components/organisms/home/Banner'
-import ConnectBanner from 'components/organisms/home/ConnectBanner'
 import Services from 'components/organisms/home/Services'
-import GalleryGrid from 'components/shared/GalleryGrid'
 import SiteHead from 'components/shared/SiteHead'
 import FadeInContainer from 'layouts/FadeInContainer'
 import { GetStaticProps } from 'next'
+import dynamic from 'next/dynamic'
 import React from 'react'
 import { Gallery } from 'types/Gallery'
 import { formatGallery } from 'utils/helpers'
+
+const ConnectBanner = dynamic(() => import('components/organisms/home/ConnectBanner'))
+const GalleryGrid = dynamic(() => import('components/shared/GalleryGrid'))
 
 const cloudinary = require('utils/cloudinary')
 

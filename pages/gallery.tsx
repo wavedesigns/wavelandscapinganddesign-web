@@ -1,12 +1,14 @@
-import ContactContainer from 'components/shared/ContactContainer'
-import GalleryGrid from 'components/shared/GalleryGrid'
 import PageBanner from 'components/shared/PageBanner'
 import SiteHead from 'components/shared/SiteHead'
 import FadeInContainer from 'layouts/FadeInContainer'
 import { GetStaticProps } from 'next'
+import dynamic from 'next/dynamic'
 import React from 'react'
 import { Gallery as GalleryImages } from 'types/Gallery'
 import { formatGallery } from 'utils/helpers'
+
+const GalleryGrid = dynamic(() => import('components/shared/GalleryGrid'))
+const ContactContainer = dynamic(() => import('components/shared/ContactContainer'))
 
 const cloudinary = require('utils/cloudinary')
 

@@ -1,13 +1,15 @@
 import ReviewBlock from 'components/atoms/ReviewBlock'
-import ContactContainer from 'components/shared/ContactContainer'
 import PageBanner from 'components/shared/PageBanner'
 import SiteHead from 'components/shared/SiteHead'
 import { gql, GraphQLClient } from 'graphql-request'
 import FadeInContainer from 'layouts/FadeInContainer'
 import PageContainer from 'layouts/PageContainer'
 import { GetStaticProps } from 'next'
+import dynamic from 'next/dynamic'
 import React from 'react'
 import { Review } from 'types/Review'
+
+const ContactContainer = dynamic(() => import('components/shared/ContactContainer'))
 
 const client = new GraphQLClient(process.env.NEXT_PUBLIC_GRAPHCMS_URL)
 

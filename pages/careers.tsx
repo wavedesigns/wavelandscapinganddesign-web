@@ -1,11 +1,13 @@
 import SectionTitle from 'components/atoms/SectionTitle'
 import CareersForm from 'components/molecules/CareersForm'
-import ContactContainer from 'components/shared/ContactContainer'
 import PageBanner from 'components/shared/PageBanner'
 import SiteHead from 'components/shared/SiteHead'
 import FadeInContainer from 'layouts/FadeInContainer'
 import PageContainer from 'layouts/PageContainer'
+import dynamic from 'next/dynamic'
 import React from 'react'
+
+const ContactContainer = dynamic(() => import('components/shared/ContactContainer'))
 
 const SEO = {
   title: 'Wave Landscaping & Design: We offer a variety of landscaping services',

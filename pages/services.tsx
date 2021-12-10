@@ -1,4 +1,3 @@
-import ServiceCard from 'components/molecules/ServiceCard'
 import ServiceLinks from 'components/molecules/ServiceLinks'
 import ContactContainer from 'components/shared/ContactContainer'
 import PageBanner from 'components/shared/PageBanner'
@@ -7,9 +6,11 @@ import { gql, GraphQLClient } from 'graphql-request'
 import FadeInContainer from 'layouts/FadeInContainer'
 import PageContainer from 'layouts/PageContainer'
 import { GetStaticProps } from 'next'
+import dynamic from 'next/dynamic'
 import React from 'react'
 import { Service } from 'types/Service'
 
+const ServiceCard = dynamic(() => import('components/molecules/ServiceCard'))
 const client = new GraphQLClient(process.env.NEXT_PUBLIC_GRAPHCMS_URL)
 
 const SEO = {
