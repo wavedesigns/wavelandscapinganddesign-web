@@ -1,9 +1,11 @@
 import Button from 'components/atoms/Button'
-import FormResponse from 'components/atoms/FormResponse'
 import InputText from 'components/atoms/InputText'
+import dynamic from 'next/dynamic'
 import React, { useState } from 'react'
 import { FAILED_EMAIL_MESSAGE, successEmailMessage } from 'utils/constants'
 import sendClientEmail from 'utils/email/client-handler'
+
+const FormResponse = dynamic(() => import('components/atoms/FormResponse'))
 
 interface Props {
   isBlue: boolean
