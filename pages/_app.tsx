@@ -8,7 +8,7 @@ import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import React from 'react'
 
-const Footer = dynamic(() => import('components/shared/Footer'))
+const Footer = dynamic(() => import('components/shared/Footer'), { ssr: false })
 const SiteHead = () => (
   <Head>
     <meta charSet="utf-8" />

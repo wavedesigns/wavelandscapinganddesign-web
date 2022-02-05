@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 import React from 'react'
 import { SERVICES } from 'utils/constants'
 
-const ServiceBlock = dynamic(() => import('components/molecules/ServiceBlock'))
+const ServiceBlock = dynamic(() => import('components/molecules/ServiceBlock'), { ssr: false })
 
 const Services = () => (
   <div className="p-4 sm:p-16">

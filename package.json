@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "next dev -p 4001",
     "build": "ANALYZE=true next build",
-    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": " eslint . --fix",
     "format": "prettier --write .",

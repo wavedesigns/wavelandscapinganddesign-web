@@ -1,6 +1,5 @@
 import ButtonWithLabel from 'components/atoms/ButtonWithLabel'
 import Banner from 'components/organisms/home/Banner'
-import Services from 'components/organisms/home/Services'
 import SiteHead from 'components/shared/SiteHead'
 import FadeInContainer from 'layouts/FadeInContainer'
 import { GetStaticProps } from 'next'
@@ -9,8 +8,11 @@ import React from 'react'
 import { Gallery } from 'types/Gallery'
 import { formatGallery } from 'utils/helpers'
 
-const ConnectBanner = dynamic(() => import('components/organisms/home/ConnectBanner'))
-const GalleryGrid = dynamic(() => import('components/shared/GalleryGrid'))
+const ConnectBanner = dynamic(() => import('components/organisms/home/ConnectBanner'), {
+  ssr: false,
+})
+const GalleryGrid = dynamic(() => import('components/shared/GalleryGrid'), { ssr: false })
+const Services = dynamic(() => import('components/organisms/home/Services'), { ssr: false })
 
 const cloudinary = require('utils/cloudinary')
 

@@ -86,6 +86,11 @@ export const SERVICES = [
   },
 ]
 
+export const SITE_URL =
+  process.env.NODE_ENV === 'production'
+    ? 'https://www.wavelandscapinganddesign.com'
+    : 'http://localhost:4001'
+
 export const FAILED_EMAIL_MESSAGE =
   'There was an issue with your submission, please email the details to wavelandscapingdesign@gmail.com'
 export const successEmailMessage = (page: string) =>

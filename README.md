@@ -19,7 +19,3 @@ Wave Landscaping & Design is the premiere landscaping design and maintenance ser
 - [React Testing Library](https://testing-library.com)
 - [Tailwindcss](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org/)
-
-## TO DOS
-
-- Finish writing tests for organisms, shared, and pages

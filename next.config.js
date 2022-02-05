@@ -5,8 +5,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withBundleAnalyzer({
   images: {
     domains: ['res.cloudinary.com', 'media.graphcms.com'],
-    minimumCacheTTL: 60 * 60 * 5,
+    minimumCacheTTL: 18000,
     deviceSizes: [640, 768, 1024, 1280, 1536],
+    imageSizes: [320, 480, 640, 768, 1024, 1280, 1536],
   },
   env: {
     NEXT_PUBLIC_FORM_SPREE_CONTACT_KEY: process.env.NEXT_PUBLIC_FORM_SPREE_CONTACT_KEY,
