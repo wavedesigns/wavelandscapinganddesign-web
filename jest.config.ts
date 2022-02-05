@@ -48,6 +48,7 @@ const jestConfig = {
   moduleNameMapper: {
     // TODO update this mapping whenever updating paths in tsconfig.json
     '~/(.*)': '<rootDir>/$1',
+    '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
   },
   moduleDirectories: ['.', 'node_modules'],
 

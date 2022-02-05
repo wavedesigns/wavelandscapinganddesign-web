@@ -1,5 +1,3 @@
-import 'tailwindcss/tailwind.css'
-import 'react-image-lightbox/style.css'
 import 'styles/global.css'
 
 import Header from 'components/shared/Header'
