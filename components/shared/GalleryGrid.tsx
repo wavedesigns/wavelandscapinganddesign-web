@@ -6,6 +6,7 @@ import useInView from 'react-cool-inview'
 import { Gallery } from 'types/Gallery'
 
 const GalleryImage = dynamic(() => import('components/molecules/GalleryImage'))
+
 interface Props {
   gallery: Gallery[]
 }

@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import React from 'react'
 
 const SocialMedia = dynamic(() => import('components/molecules/SocialMedia'))
+
 const ConnectBanner = () => (
   <div className="my-16 sm:my-40">
     <ButtonWithLabel
