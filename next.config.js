@@ -5,8 +5,8 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withBundleAnalyzer({
   images: {
     domains: ['res.cloudinary.com', 'media.graphcms.com'],
-    minimumCacheTTL: 18000,
-    deviceSizes: [640, 768, 1024, 1280, 1536],
+    minimumCacheTTL: 31536000,
+    deviceSizes: [639, 767, 1023, 1279, 1535],
     imageSizes: [320, 480, 640, 768, 924, 1180, 1436],
   },
   env: {
