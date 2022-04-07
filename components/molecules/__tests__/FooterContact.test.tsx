@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import FooterContact from 'components/molecules/FooterContact'
 import React from 'react'
+import { PHONE } from 'utils/constants'
 
 describe('<FooterContact />', () => {
   it('renders the contact label', () => {
@@ -15,6 +16,6 @@ describe('<FooterContact />', () => {
 
   it('renders contact phone', () => {
     render(<FooterContact />)
-    expect(screen.queryByText('516-319-3145')).toBeInTheDocument()
+    expect(screen.queryByText(PHONE)).toBeInTheDocument()
   })
 })

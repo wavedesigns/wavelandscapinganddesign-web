@@ -1,4 +1,5 @@
 import React from 'react'
+import { PHONE } from 'utils/constants'
 
 const FooterContact = () => {
   return (
@@ -8,7 +9,8 @@ const FooterContact = () => {
         <strong className="text-darkBlue font-bold">Email </strong>wavelandscapingdesign@gmail.com
       </p>
       <p className="font-serif text-base mb-2">
-        <strong className="text-darkBlue font-bold">Phone </strong>516-319-3145
+        <strong className="text-darkBlue font-bold">Phone </strong>
+        {PHONE}
       </p>
       <p className="text-darkBlue font-serif font-bold text-base">
         Based out of Palm Beach, Florida
