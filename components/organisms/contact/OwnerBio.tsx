@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import { PHONE } from 'utils/constants'
 
 const SAM_IMAGE =
   'https://res.cloudinary.com/tumulty-web-services/image/upload/f_auto,c_limit,w_1920,q_auto/wavelandscapinganddesign/various/sam-barnwell.webp'
@@ -11,7 +12,8 @@ const OwnerBio = () => (
       estimate!
     </p>
     <p className="text-xl font-serif mt-4 mb-1">
-      <strong>Phone: </strong>561-319-3145
+      <strong>Phone: </strong>
+      {PHONE}
     </p>
     <p className="text-xl font-serif mb-4 mt-0">
       <strong>Email: </strong>
