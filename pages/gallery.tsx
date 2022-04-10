@@ -1,6 +1,6 @@
 import PageBanner from 'components/shared/PageBanner'
 import SiteHead from 'components/shared/SiteHead'
-import { GetStaticProps } from 'next'
+import { GetServerSideProps, GetStaticProps } from 'next'
 import dynamic from 'next/dynamic'
 import React from 'react'
 import { IGallery as GalleryImages } from 'types/Gallery'
@@ -32,7 +32,7 @@ const Gallery = ({ gallery }: Props) => {
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const request = await cloudinary.api
     .resources({
       resource_type: 'image',
