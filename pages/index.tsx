@@ -1,7 +1,7 @@
 import ButtonWithLabel from 'components/atoms/ButtonWithLabel'
 import Banner from 'components/organisms/home/Banner'
 import SiteHead from 'components/shared/SiteHead'
-import { GetServerSideProps } from 'next'
+import { GetStaticProps } from 'next'
 import dynamic from 'next/dynamic'
 import React from 'react'
 import { IGallery } from 'types/Gallery'
@@ -47,7 +47,7 @@ const Home = ({ gallery }: Props) => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const request = await cloudinary.api
     .resources({
       resource_type: 'image',

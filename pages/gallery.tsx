@@ -32,7 +32,7 @@ const Gallery = ({ gallery }: Props) => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const request = await cloudinary.api
     .resources({
       resource_type: 'image',
