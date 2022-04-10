@@ -35,10 +35,10 @@ const GalleryGrid = ({ gallery }: Props) => {
   }
   return (
     <SRLWrapper options={options}>
-      <div className="p-4 sm:p-16">
+      <div className="px-4 py-4 sm:py-16 sm:pr-4 sm:pl-20">
         {isHome && <SectionTitle title="Gallery" />}
         <div
-          className="container grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mx-auto mt-12"
+          className="mx-auto w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mx-auto mt-12"
           ref={observe}
         >
           {inView && gallery.map((photo) => <GalleryImage image={photo} key={photo.id} />)}

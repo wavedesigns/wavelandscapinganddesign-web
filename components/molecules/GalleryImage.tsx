@@ -10,7 +10,7 @@ const GalleryImage = ({ image }: Props) => {
   const { src, alt, width, height, previewUrl } = image
   const imageProps = { src, alt, width, height }
   return (
-    <a className="block lg:mb-8" title={alt} href={previewUrl}>
+    <a className="lg:mb-8" title={alt} href={previewUrl}>
       <LightBoxImage image={imageProps} />
     </a>
   )
