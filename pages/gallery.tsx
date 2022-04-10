@@ -1,10 +1,9 @@
 import PageBanner from 'components/shared/PageBanner'
 import SiteHead from 'components/shared/SiteHead'
-import FadeInContainer from 'layouts/FadeInContainer'
 import { GetStaticProps } from 'next'
 import dynamic from 'next/dynamic'
 import React from 'react'
-import { Gallery as GalleryImages } from 'types/Gallery'
+import { IGallery as GalleryImages } from 'types/Gallery'
 import { formatGallery } from 'utils/helpers'
 
 const GalleryGrid = dynamic(() => import('components/shared/GalleryGrid'))
@@ -25,11 +24,9 @@ interface Props {
 const Gallery = ({ gallery }: Props) => {
   return (
     <>
-      <FadeInContainer>
-        <SiteHead {...SEO} />
-        <PageBanner title="Gallery" />
-        <GalleryGrid gallery={gallery} />
-      </FadeInContainer>
+      <SiteHead {...SEO} />
+      <PageBanner title="Gallery" />
+      <GalleryGrid gallery={gallery} />
       <ContactContainer isBlue={true} />
     </>
   )

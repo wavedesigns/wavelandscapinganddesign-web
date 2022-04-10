@@ -1,11 +1,11 @@
 import { buildUrl } from 'cloudinary-build-url'
-import { Gallery } from 'types/Gallery'
+import { IGallery } from 'types/Gallery'
 
 interface Radix {
   width: number
   height: number
 }
-export const formatGallery = (gallery: any, radix: Radix): Gallery[] =>
+export const formatGallery = (gallery: any, radix: Radix): IGallery[] =>
   gallery.map(({ asset_id, public_id }) => {
     const splitId = public_id.split('/')
     const alt = splitId[splitId.length - 1]
@@ -34,8 +34,8 @@ export const formatGallery = (gallery: any, radix: Radix): Gallery[] =>
         format: 'webp',
         resize: {
           type: 'scale',
-          width: Math.floor(width * 2.3),
-          height: Math.floor(height * 2.3),
+          width: Math.floor(width * 4.5),
+          height: Math.floor(height * 4.5),
         },
       },
     })

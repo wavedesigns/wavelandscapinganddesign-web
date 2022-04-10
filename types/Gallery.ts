@@ -1,4 +1,4 @@
-export interface Gallery {
+export interface IGallery {
   id: number | string
   assetId?: string
   src: string

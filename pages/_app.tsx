@@ -5,6 +5,7 @@ import { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import React from 'react'
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 const Footer = dynamic(() => import('components/shared/Footer'), { ssr: false })
 const SiteHead = () => (
@@ -14,21 +15,20 @@ const SiteHead = () => (
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="msvalidate.01" content="D568BE2730F6C27E33061E84F8DE58B1" />
     <link rel="icon" href="/images/favicons/favicon.ico" />
-    <link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png" />
     <meta name="theme-color" content="#ffffff" />
   </Head>
 )
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <>
+    <SimpleReactLightbox>
       <SiteHead />
       <Header />
       <main>
         <Component {...pageProps} />
       </main>
       <Footer />
-    </>
+    </SimpleReactLightbox>
   )
 }
 

@@ -16,6 +16,12 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utils/cloudinary.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "utils/cloudinary.js",
+    "components/atoms/LightBoxImage.jsx"
+  ],
   "exclude": ["node_modules"]
 }

@@ -1,11 +1,10 @@
 import ButtonWithLabel from 'components/atoms/ButtonWithLabel'
 import Banner from 'components/organisms/home/Banner'
 import SiteHead from 'components/shared/SiteHead'
-import FadeInContainer from 'layouts/FadeInContainer'
 import { GetStaticProps } from 'next'
 import dynamic from 'next/dynamic'
 import React from 'react'
-import { Gallery } from 'types/Gallery'
+import { IGallery } from 'types/Gallery'
 import { formatGallery } from 'utils/helpers'
 
 const ConnectBanner = dynamic(() => import('components/organisms/home/ConnectBanner'), {
@@ -23,7 +22,7 @@ const SEO = {
 }
 
 interface Props {
-  gallery: Gallery[]
+  gallery: IGallery[]
 }
 
 const Home = ({ gallery }: Props) => {
@@ -34,7 +33,7 @@ const Home = ({ gallery }: Props) => {
     width: '320px',
   }
   return (
-    <FadeInContainer>
+    <>
       <SiteHead {...SEO} />
       <Banner />
       <div className="bg-gray-200">
@@ -44,7 +43,7 @@ const Home = ({ gallery }: Props) => {
         <br />
       </div>
       <ConnectBanner />
-    </FadeInContainer>
+    </>
   )
 }
 
