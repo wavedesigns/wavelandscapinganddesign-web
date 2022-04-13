@@ -5,7 +5,7 @@ import SiteHead from 'components/shared/SiteHead'
 import { gql, GraphQLClient } from 'graphql-request'
 import FadeInContainer from 'layouts/FadeInContainer'
 import PageContainer from 'layouts/PageContainer'
-import { GetStaticProps } from 'next'
+import { GetServerSideProps } from 'next'
 import dynamic from 'next/dynamic'
 import React from 'react'
 import { Service } from 'types/Service'
@@ -50,7 +50,7 @@ const Services = ({ services }) => {
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const query = gql`
     query {
       services {
