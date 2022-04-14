@@ -12,3 +12,33 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.mailinglist-form {
+  @apply flex;
+  @apply flex-col;
+  @apply items-center;
+  @apply justify-center;
+}
+
+.mailinglist-form > input {
+  @apply mb-4;
+  @apply border-2;
+  @apply p-3;
+  @apply rounded;
+  @apply w-full;
+}
+
+.mailinglist-form > button {
+  @apply bg-darkBlue;
+  @apply p-3;
+  @apply rounded;
+  @apply text-white;
+  @apply font-serif;
+  width: 200px;
+}
+
+@media (min-width: 768px) {
+  .mailinglist-form > input {
+    @apply w-2/4;
+  }
+}
