@@ -6,6 +6,7 @@ import { SITE_NAV, SOCIAL_MEDIA_LINKS } from 'utils/constants'
 const mockProps = {
   position: 'justify-end',
   radix: 64,
+  displayMailingListLink: true,
 }
 
 describe('<SocialMedia />', () => {

@@ -6,11 +6,16 @@ const FOOTER_NAVS = [
   ...SITE_NAV,
   {
     id: 6,
+    label: 'Mailing List',
+    slug: '/mailing-list',
+  },
+  {
+    id: 7,
     label: 'Sitemap',
     slug: '/sitemap.xml',
   },
   {
-    id: 7,
+    id: 8,
     label: 'Privacy Policy',
     slug: '/privacy-policy',
   },

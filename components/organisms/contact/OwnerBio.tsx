@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import { PHONE } from 'utils/constants'
 
@@ -18,6 +19,13 @@ const OwnerBio = () => (
     <p className="text-xl font-serif mb-4 mt-0">
       <strong>Email: </strong>
       <a href="mailto:wavelandscapingdesign@gmail.com">wavelandscapingdesign@gmail.com</a>
+    </p>
+    <p className="text-xl font-serif mb-4 mt-0">
+      <strong>Also feel free to join our mailing list to get our latest updates!</strong>
+      <br />
+      <Link href="/mailing-list">
+        <a className="mt-2 mb-6 block underline text-darkBlue">Mailing List</a>
+      </Link>
     </p>
     <Image src={SAM_IMAGE} alt="Sam Barnwell" width={636} height={363} />
   </div>

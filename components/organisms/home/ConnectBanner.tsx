@@ -13,7 +13,7 @@ const ConnectBanner = () => (
       width="320px"
     />
     <br />
-    <SocialMedia position="justify-center" radix={64} />
+    <SocialMedia displayMailingListLink={false} position="justify-center" radix={64} />
   </div>
 )
 

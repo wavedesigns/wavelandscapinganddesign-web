@@ -7,7 +7,7 @@ const MobileMenu = dynamic(() => import('components/molecules/MobileMenu'))
 const Menu = () => (
   <>
     <div className="hidden lg:block">
-      <SocialMedia position="justify-end" radix={32} />
+      <SocialMedia displayMailingListLink={true} position="justify-end" radix={32} />
       <Navigation />
     </div>
     <div className="block lg:hidden">
