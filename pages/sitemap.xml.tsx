@@ -1,13 +1,17 @@
 import { GetServerSideProps } from 'next'
 import { SITE_NAV, SITE_URL } from 'utils/constants'
 
+const MAILING_LIST_LINK = {
+  slug: '/mailing-list',
+}
 const Sitemap = () => null
 export default Sitemap
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
-  const siteLinks = SITE_NAV.map(
-    ({ slug }) =>
-      `
+  const siteLinks = [...SITE_NAV, MAILING_LIST_LINK]
+    .map(
+      ({ slug }) =>
+        `
     <url>
       <loc>${SITE_URL}${slug}</loc>
       <lastmod>${new Date().toISOString()}</lastmod>
@@ -15,7 +19,8 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
       <priority>1.0</priority>
     </url> 
 `
-  ).join('')
+    )
+    .join('')
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
