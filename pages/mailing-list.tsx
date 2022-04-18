@@ -21,6 +21,10 @@ const Mailinglist = () => {
       <FadeInContainer>
         <PageBanner title="Subscribe!" />
         <PageContainer>
+          <p className="text-center my-5 text-2xl">
+            <span className="block strong">Join our mailing list!</span>
+            Keep up to date with discounts, promotions, and everyday lawn care tips.
+          </p>
           <Mailchimp
             action="https://wavelandscapinganddesign.us14.list-manage.com/subscribe/post?u=69033040d6f936a0ae54f507c&amp;id=1f0f8a0307"
             fields={[
