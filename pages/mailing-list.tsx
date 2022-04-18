@@ -21,8 +21,8 @@ const Mailinglist = () => {
       <FadeInContainer>
         <PageBanner title="Subscribe!" />
         <PageContainer>
-          <p className="text-center my-5 text-2xl">
-            <span className="block strong">Join our mailing list!</span>
+          <p className="text-center mb-12 -mt-6 text-3xl">
+            <span className="block">Join our mailing list!</span>
             Keep up to date with discounts, promotions, and everyday lawn care tips.
           </p>
           <Mailchimp
