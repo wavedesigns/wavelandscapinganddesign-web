@@ -63,7 +63,7 @@
     "jest-transform-stub": "^2.0.0",
     "lint-staged": "^11.1.2",
     "next-sitemap": "^1.6.140",
-    "npm": "^8.6.0",
+    "npm": "^8.11.0",
     "postcss": "^8.4.4",
     "prettier": "^2.2.1",
     "tailwindcss": "^2.2.19",
